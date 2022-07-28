@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby ">=2.3.8"
 
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
