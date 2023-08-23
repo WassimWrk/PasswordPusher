@@ -78,7 +78,7 @@ gem "jbuilder"
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'foreman'
-gem 'puma'
+gem 'puma', '>= 6.3.1'
 gem 'oj'
 gem 'devise', '>= 4.8.1'
 gem 'config'
