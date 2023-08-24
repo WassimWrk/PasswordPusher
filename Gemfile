@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby ENV['CUSTOM_RUBY_VERSION'] || '>=2.7.0'
 
-gem 'rails', '~> 7.0.4'
+gem 'rails', '~> 7.0.7', '>= 7.0.7.1'
 
 group :development do
   gem 'listen'
@@ -61,14 +61,14 @@ gem "terser", "~> 1.1"
 gem 'json', '~> 2.0' # Legacy carry-over
 gem 'will_paginate', '~> 3.3.0'
 gem 'will_paginate-bootstrap-style'
-gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+gem 'bootstrap', '~> 5.3', '>= 5.3.0'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+gem "importmap-rails", ">= 1.1.6"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+gem "turbo-rails", ">= 1.4.0"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+gem "stimulus-rails", ">= 1.2.2"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
@@ -80,14 +80,14 @@ gem "jbuilder"
 gem 'foreman'
 gem 'puma'
 gem 'oj'
-gem 'devise', '>= 4.8.1'
+gem 'devise', '>= 4.9.0'
 gem 'config'
-gem 'route_translator', '>= 13.0.0'
+gem 'route_translator', '>= 13.1.1'
 gem 'translation'
-gem 'mail_form', '>= 1.9.0'
-gem 'apipie-rails'
+gem 'mail_form', '>= 1.10.0'
+gem 'apipie-rails', '>= 0.9.2'
 gem 'simple_token_authentication', '~> 1.18', '>= 1.18.0', git: "https://github.com/pglombardo/simple_token_authentication.git", branch: 'rails7-support'
-gem 'lograge'
+gem 'lograge', '>= 0.13.0'
 gem 'rollbar'
 
 # For File Uploads
