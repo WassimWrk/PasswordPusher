@@ -21,7 +21,7 @@ group :test do
   gem 'capybara', '>= 3.37.1', '< 4.0'
   gem 'minitest'
   gem 'minitest-reporters'
-  gem 'minitest-rails', '>= 6.1.0'
+  gem 'minitest-rails', '>= 7.1.0'
   gem 'selenium-webdriver', '4.8.0'
   gem 'webdrivers', '~> 5.0', require: false
 end
