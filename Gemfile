@@ -2,28 +2,28 @@ source 'https://rubygems.org'
 
 ruby ENV['CUSTOM_RUBY_VERSION'] || '>=2.7.0'
 
-gem 'rails', '~> 7.0.4'
+gem 'rails', '~> 7.0.8', '>= 7.0.8.4'
 
 group :development do
   gem 'listen'
 
   # Visual Studio Additions
-  gem 'rubocop'
+  gem 'rubocop', '>= 1.45.0'
   gem 'ruby-debug-ide'
 
   # Access an interactive console on exception pages or by
   # calling 'console' anywhere in the code.
-  gem 'web-console', '>= 4.2.0'
+  gem 'web-console', '>= 4.2.1'
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.37.1', '< 4.0'
+  gem 'capybara', '>= 3.39.0', '< 4.0'
   gem 'minitest'
   gem 'minitest-reporters'
-  gem 'minitest-rails', '>= 6.1.0'
-  gem 'selenium-webdriver', '4.8.0'
-  gem 'webdrivers', '~> 5.0', require: false
+  gem 'minitest-rails', '>= 7.0.1'
+  gem 'selenium-webdriver', '4.8.1'
+  gem 'webdrivers', '~> 5.3', '>= 5.3.0', require: false
 end
 
 group :development, :test do
@@ -32,8 +32,8 @@ group :development, :test do
   gem 'debase', '>= 0.2.5.beta2', platforms: %i[ mri mingw x64_mingw ]
 end
 
-gem 'rack-cors'
-gem 'rack-attack'
+gem 'rack-cors', '>= 2.0.0'
+gem 'rack-attack', '>= 6.7.0'
 
 # OSX: ../src/utils.h:33:10: fatal error: 'climits' file not found
 # From:
@@ -61,16 +61,16 @@ gem "terser", "~> 1.1"
 gem 'json', '~> 2.0' # Legacy carry-over
 gem 'will_paginate', '~> 3.3.0'
 gem 'will_paginate-bootstrap-style'
-gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+gem 'bootstrap', '~> 5.3', '>= 5.3.0'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+gem "importmap-rails", ">= 1.1.6"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+gem "turbo-rails", ">= 1.4.0"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+gem "stimulus-rails", ">= 1.2.2"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
+gem "jbuilder", ">= 2.12.0"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -80,20 +80,20 @@ gem "jbuilder"
 gem 'foreman'
 gem 'puma'
 gem 'oj'
-gem 'devise', '>= 4.8.1'
+gem 'devise', '>= 4.9.0'
 gem 'config'
-gem 'route_translator', '>= 13.0.0'
+gem 'route_translator', '>= 13.1.1'
 gem 'translation'
-gem 'mail_form', '>= 1.9.0'
-gem 'apipie-rails'
+gem 'mail_form', '>= 1.10.0'
+gem 'apipie-rails', '>= 0.9.2'
 gem 'simple_token_authentication', '~> 1.18', '>= 1.18.0', git: "https://github.com/pglombardo/simple_token_authentication.git", branch: 'rails7-support'
-gem 'lograge'
+gem 'lograge', '>= 0.13.0'
 gem 'rollbar'
 
 # For File Uploads
 gem "aws-sdk-s3", require: false
 gem "azure-storage-blob", "~> 2.0", require: false
-gem "google-cloud-storage", "~> 1.11", require: false
+gem "google-cloud-storage", "~> 1.45", ">= 1.45.0", require: false
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -112,6 +112,6 @@ end
 
 group :production, :private do
   gem 'rack-timeout'
-  gem 'rack-throttle'
+  gem 'rack-throttle', '>= 0.7.1'
 end
 
