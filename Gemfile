@@ -8,7 +8,7 @@ group :development do
   gem 'listen'
 
   # Visual Studio Additions
-  gem 'rubocop'
+  gem 'rubocop', '>= 1.45.0'
   gem 'ruby-debug-ide'
 
   # Access an interactive console on exception pages or by
@@ -22,8 +22,8 @@ group :test do
   gem 'minitest'
   gem 'minitest-reporters'
   gem 'minitest-rails', '>= 6.1.0'
-  gem 'selenium-webdriver', '4.8.0'
-  gem 'webdrivers', '~> 5.0', require: false
+  gem 'selenium-webdriver', '4.8.1'
+  gem 'webdrivers', '~> 5.3', '>= 5.3.0', require: false
 end
 
 group :development, :test do
@@ -93,7 +93,7 @@ gem 'rollbar'
 # For File Uploads
 gem "aws-sdk-s3", require: false
 gem "azure-storage-blob", "~> 2.0", require: false
-gem "google-cloud-storage", "~> 1.11", require: false
+gem "google-cloud-storage", "~> 1.45", ">= 1.45.0", require: false
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
