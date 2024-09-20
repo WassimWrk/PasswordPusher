@@ -336,7 +336,7 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
-    nio4r (2.5.8)
+    nio4r (2.7.3)
     nokogiri (1.14.1)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -352,7 +352,7 @@ GEM
       forwardable
       singleton
     public_suffix (5.0.1)
-    puma (6.0.2)
+    puma (6.4.3)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.2)
@@ -534,7 +534,7 @@ DEPENDENCIES
   mysql2
   oj
   pg
-  puma
+  puma (>= 6.4.3)
   rack-attack
   rack-cors
   rack-throttle
