@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby ENV['CUSTOM_RUBY_VERSION'] || '>=2.7.0'
 
-gem 'rails', '~> 7.0.4'
+gem 'rails', '~> 7.0.8', '>= 7.0.8.7'
 
 group :development do
   gem 'listen'
@@ -21,7 +21,7 @@ group :test do
   gem 'capybara', '>= 3.37.1', '< 4.0'
   gem 'minitest'
   gem 'minitest-reporters'
-  gem 'minitest-rails', '>= 6.1.0'
+  gem 'minitest-rails', '>= 7.2.0'
   gem 'selenium-webdriver', '4.8.0'
   gem 'webdrivers', '~> 5.0', require: false
 end
@@ -61,7 +61,7 @@ gem "terser", "~> 1.1"
 gem 'json', '~> 2.0' # Legacy carry-over
 gem 'will_paginate', '~> 3.3.0'
 gem 'will_paginate-bootstrap-style'
-gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+gem 'bootstrap', '~> 5.3', '>= 5.3.2'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
