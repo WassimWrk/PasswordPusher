@@ -32,7 +32,7 @@ group :development, :test do
   gem 'debase', '>= 0.2.5.beta2', platforms: %i[ mri mingw x64_mingw ]
 end
 
-gem 'rack-cors'
+gem 'rack-cors', '>= 3.0.0'
 gem 'rack-attack'
 
 # OSX: ../src/utils.h:33:10: fatal error: 'climits' file not found
